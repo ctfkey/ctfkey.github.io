@@ -6,25 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>hexo使用 | 妄想-Dubai</title>
+  <title>java乱码原因以及解决 | 妄想-Dubai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、hexo主题切换​        在hexo目录下，找到_config.yml文件，用记事本或者其他编译器打开，修改theme: landscape。主题存放的目录为themes，打开目录后，找到我们要切换的主题的文件名，如果没有，我们可以从github之类的网站下载。 ​        主题目录为yilia，那么我们修改为：theme: yilia。">
+  <meta name="description" content="一、背景​        用idea、eclipse之类的java软件没有出现过中文乱码，而用cmd命令窗口却出现乱码现象。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo使用">
-<meta property="og:url" content="http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:title" content="java乱码原因以及解决">
+<meta property="og:url" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/index.html">
 <meta property="og:site_name" content="妄想-Dubai">
-<meta property="og:description" content="一、hexo主题切换​        在hexo目录下，找到_config.yml文件，用记事本或者其他编译器打开，修改theme: landscape。主题存放的目录为themes，打开目录后，找到我们要切换的主题的文件名，如果没有，我们可以从github之类的网站下载。 ​        主题目录为yilia，那么我们修改为：theme: yilia。">
+<meta property="og:description" content="一、背景​        用idea、eclipse之类的java软件没有出现过中文乱码，而用cmd命令窗口却出现乱码现象。">
 <meta property="og:locale">
-<meta property="og:image" content="http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/0.png">
-<meta property="og:image" content="http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/1.png">
-<meta property="og:image" content="http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/2.png">
-<meta property="article:published_time" content="2021-07-02T07:24:59.000Z">
-<meta property="article:modified_time" content="2021-07-02T08:56:25.598Z">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/0.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/1.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/2.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/3.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/4.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/5.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/6.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/7.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/8.png">
+<meta property="og:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/9.png">
+<meta property="article:published_time" content="2021-07-10T12:01:15.000Z">
+<meta property="article:modified_time" content="2021-07-10T12:56:59.753Z">
 <meta property="article:author" content="妄想-Dubai">
-<meta property="article:tag" content="hexo">
 <meta property="article:tag" content="学习记录">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/0.png">
+<meta name="twitter:image" content="http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/0.png">
   
     <link rel="alternative" href="/atom.xml" title="妄想-Dubai" type="application/atom+xml">
   
@@ -150,45 +157,63 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo使用" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-java乱码原因以及解决" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo使用
+      java乱码原因以及解决
     </h1>
   
 
         
-        <a href="/2021/07/02/hexo%E4%BD%BF%E7%94%A8/" class="archive-article-date">
-  	<time datetime="2021-07-02T07:24:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-02</time>
+        <a href="/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/" class="archive-article-date">
+  	<time datetime="2021-07-10T12:01:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="一、hexo主题切换"><a href="#一、hexo主题切换" class="headerlink" title="一、hexo主题切换"></a>一、hexo主题切换</h1><p>​        在hexo目录下，找到_config.yml文件，用记事本或者其他编译器打开，修改theme: landscape。主题存放的目录为themes，打开目录后，找到我们要切换的主题的文件名，如果没有，我们可以从github之类的网站下载。</p>
-<p>​        主题目录为yilia，那么我们修改为：theme: yilia。</p>
+        <h1 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h1><p>​        用idea、eclipse之类的java软件没有出现过中文乱码，而用cmd命令窗口却出现乱码现象。</p>
 <span id="more"></span>
 
 <p><img src="0.png" alt="0"></p>
 <p><img src="1.png" alt="1"></p>
-<h1 id="二、hexo写作"><a href="#二、hexo写作" class="headerlink" title="二、hexo写作"></a>二、hexo写作</h1><p>​        1. 在hexo目录下，进入cmd窗口，输入：</p>
-<hr>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new 文章编写名称</span><br></pre></td></tr></table></figure>
-
-<p>​        创建文章会放在source\_posts下面</p>
+<h1 id="二、原因"><a href="#二、原因" class="headerlink" title="二、原因"></a>二、原因</h1><p>​        我们使用电脑的记事本或者notepad++在编写代码时，一般默认是utf-8编码。而我们的cmd窗口一般默认为GBK编码。</p>
+<p>​        记事本右下角有编码方式：</p>
 <p><img src="2.png" alt="2"></p>
-<p>​        打开我的第一篇博客，其中tags为标签。当只有一个标签时，我们直接在tags后面添加上我们想要的标签就可以了。当有多个标签时，我们在tags后面写上[标签,标签,标签,标签]。</p>
-<h1 id="三、-Typora编写hexo文章"><a href="#三、-Typora编写hexo文章" class="headerlink" title="三、 Typora编写hexo文章"></a>三、 Typora编写hexo文章</h1><p>Typora编写文章更加高效，直观。下面将介绍Typora常用方法：</p>
-<ol>
-<li>标题的添加：一级标题用：#；二级标题用：##；三级标题用：###。</li>
-<li>代码块使用：- - -  +  回车，在使用ctrl + shift + k 。</li>
-<li>图片添加：在文章目录下创建一个文件夹，直接把文章内的图片拖入到Typora中就可以了。</li>
+<p>​        notepad++右下角也有编码方式：</p>
+<p><img src="3.png" alt="3"></p>
+<p>​        cmd默认编码方式需要在cmd窗口输入chcp：</p>
+<p><img src="4.png" alt="4"></p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">437 美国</span><br><span class="line">708 阿拉伯文(ASMO 708)</span><br><span class="line">720 阿拉伯文(DOS)</span><br><span class="line">850 多语言(拉丁文 I)</span><br><span class="line">852 中欧(DOS) - 斯拉夫语(拉丁文 II)</span><br><span class="line">855 西里尔文(俄语)</span><br><span class="line">857 土耳其语</span><br><span class="line">860 葡萄牙语</span><br><span class="line">861 冰岛语</span><br><span class="line">862 希伯来文(DOS)</span><br><span class="line">863 加拿大 - 法语</span><br><span class="line">865 日耳曼语</span><br><span class="line">866 俄语 - 西里尔文(DOS)</span><br><span class="line">869 现代希腊语</span><br><span class="line">874 泰文(Windows)</span><br><span class="line">932 日文(Shift-JIS)</span><br><span class="line">936 中国 - 简体中文(GB2312)</span><br><span class="line">949 韩文</span><br><span class="line">950 繁体中文(Big5)</span><br><span class="line">1200 Unicode</span><br><span class="line">1201 Unicode (Big-Endian)</span><br><span class="line">1250 中欧(Windows)</span><br><span class="line">1251 西里尔文(Windows)</span><br><span class="line">1252 西欧(Windows)</span><br><span class="line">1253 希腊文(Windows)</span><br><span class="line">1254 土耳其文(Windows)</span><br><span class="line">1255 希伯来文(Windows)</span><br><span class="line">1256 阿拉伯文(Windows)</span><br><span class="line">1257 波罗的海文(Windows)</span><br><span class="line">1258 越南文(Windows)</span><br><span class="line">20866 西里尔文(KOI8-R)</span><br><span class="line">21866 西里尔文(KOI8-U)</span><br><span class="line">28592 中欧(ISO)</span><br><span class="line">28593 拉丁文 3 (ISO)</span><br><span class="line">28594 波罗的海文(ISO)</span><br><span class="line">28595 西里尔文(ISO)</span><br><span class="line">28596 阿拉伯文(ISO)</span><br><span class="line">28597 希腊文(ISO)</span><br><span class="line">28598 希伯来文(ISO-Visual)</span><br><span class="line">38598 希伯来文(ISO-Logical)</span><br><span class="line">50000 用户定义的</span><br><span class="line">50001 自动选择</span><br><span class="line">50220 日文(JIS)</span><br><span class="line">50221 日文(JIS-允许一个字节的片假名)</span><br><span class="line">50222 日文(JIS-允许一个字节的片假名 - SO/SI)</span><br><span class="line">50225 韩文(ISO)</span><br><span class="line">50932 日文(自动选择)</span><br><span class="line">50949 韩文(自动选择)</span><br><span class="line">51932 日文(EUC)</span><br><span class="line">51949 韩文(EUC)</span><br><span class="line">52936 简体中文(HZ)</span><br><span class="line">65000 Unicode (UTF-7)</span><br><span class="line">65001 Unicode (UTF-8)</span><br></pre></td></tr></table></figure>
+
+<p>​        从上面的表知道，936为GB2312编码。不过，一般不会说GB2312编码，一般会说GBK编码。</p>
+<p>​        编码方式不同，也就会出现乱码。</p>
+<h1 id="三、解决"><a href="#三、解决" class="headerlink" title="三、解决"></a>三、解决</h1><ol>
+<li><p>改变cmd默认编码：</p>
+<p>【win】+【R】打开运行命令框，在命令框输入：Regedit</p>
+<p><img src="5.png" alt="5"></p>
+<p>在HKEY_CURRENT_USER-&gt;Console-&gt;CodPage设置为65001，让cmd窗口默认编码也是utf-8。</p>
+</li>
+<li><p>改变notepad++默认编码：</p>
+<p>打开notepad++，点击上面编码，再选择第一个选项了。这个选项是本地是什么默认编码，它就是什么编码。</p>
+<p><img src="6.png" alt="6"></p>
+</li>
+<li><p>记事本编写java代码出现乱码：</p>
+<p>记事本默认编码无法改变，只能在cmd窗口以utf-8编码编译。</p>
+<p><img src="7.png" alt="7"></p>
+<p><img src="8.png" alt="8"></p>
+</li>
 </ol>
+<h1 id="四、思考"><a href="#四、思考" class="headerlink" title="四、思考"></a>四、思考</h1><p>​        为什么用idea、eclipse之类的java软件没有出现过中文乱码，而用cmd命令窗口却出现乱码现象？</p>
+<p>​        我打开IntelliJ IDEA ，查看一下默认编码，发现人家早就设置好了。</p>
+<p>​        tql</p>
+<p><img src="9.png" alt="9"></p>
 
       
 
@@ -223,11 +248,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习记录</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">学习记录</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
@@ -283,7 +308,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/02/hexo%E4%BD%BF%E7%94%A8/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/10/java%E4%B9%B1%E7%A0%81%E5%8E%9F%E5%9B%A0%E4%BB%A5%E5%8F%8A%E8%A7%A3%E5%86%B3/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -297,18 +322,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/07/03/vue%E8%B6%85%E5%9F%BA%E7%A1%80%E6%90%9C%E7%B4%A2%E6%A0%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue超基础搜索栏
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/07/01/github%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">github搭建hexo博客</div>
+    <a href="/2021/07/03/vue%E8%B6%85%E5%9F%BA%E7%A1%80%E6%90%9C%E7%B4%A2%E6%A0%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue超基础搜索栏</div>
       <i class="icon-circle-right"></i>
     </a>
   
